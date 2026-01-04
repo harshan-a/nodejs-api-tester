@@ -1,0 +1,221 @@
+main .req-sending-section {
+  width: calc(100% - 200px); /* collection-section width */
+  height: calc(100% - 30px); /* this margin */
+  min-width: calc(600px - 200px - 30px); /* main_header - collection-section width+padding - this margin*/
+  margin: 15px;
+  box-shadow: 0px 0px 4px rgba(128, 128, 128, 0.25);
+  border-radius: 5px;
+  /* background: lightblue; */
+}
+
+main .req-sending-section .sending-title {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 19px;
+  color: black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: lightblue; */
+}
+
+main .req-sending-section .sending-title 
+.close-btn-in-req-section {
+  position: absolute;
+  right: 7px;
+  height: fit-content;
+  padding: 0px 6px;
+  font-size: 14px;
+}
+
+main .req-sending-section .sending-wrapper {
+  /* background: lightblue; */
+  width: 100%;
+  height: calc(100% - 35px); /* sending-title height*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .req-sending-section .sending-wrapper 
+.send-req-wrapper {
+  /* background: lightpink; */
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 50%;
+  min-width: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(128, 128, 128, 0.25);
+}
+
+main .req-sending-section .sending-wrapper 
+.send-req-wrapper .req-method-drop-down,
+main .req-sending-section .sending-wrapper .save-req-wrapper 
+.collection-to-save-req {
+  height: 30px;
+  width: 80px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+main .req-sending-section .sending-wrapper 
+.send-req-wrapper input[type="text"] {
+  width: 300px;
+  min-width: 100px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  text-overflow: ellipsis;
+}
+
+
+
+main .req-sending-section .sending-wrapper .req-body-wrapper {
+  /* background: lightpink; */
+  width: 50%;
+  min-width: 330px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  column-gap: 20px;
+  align-items:start;
+  box-shadow: 0px 0px 4px rgba(128, 128, 128, 0.25);
+  margin-bottom: 10px;
+}
+
+main .req-sending-section .sending-wrapper .req-body-wrapper .body-btn {
+  margin: 0;
+}
+
+main .req-sending-section .sending-wrapper .req-body-wrapper.show-body-text-area {
+  height: 150px;
+}
+
+main .req-sending-section .sending-wrapper .req-body-wrapper
+.text-area-wrapper {
+  width: calc(100% - 60px - 20px); /* button width - column-gap */
+  height: 100%;
+}
+
+main .req-sending-section .sending-wrapper .req-body-wrapper
+.text-area-wrapper textarea {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  resize: none;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 4px rgba(128, 128, 128, 0.25);
+}
+
+main .req-sending-section .sending-wrapper .display-res-wrapper {
+  /* background: lightpink; */
+  width: 85%;
+  min-width: 330px;
+  padding: 10px;
+  box-shadow: inset 0px 0px 4px rgba(128, 128, 128, 0.25);
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  flex: 1;
+  overflow: auto;
+  white-space: wrap;
+}
+
+main .req-sending-section .sending-wrapper .display-res-wrapper .res-status-wrapper span{
+  font-size: 14px;
+  color: lightpink;
+}
+
+main .req-sending-section .sending-wrapper .save-req-wrapper {
+  /* background: lightpink; */
+  width: 50%;
+  min-width: 350px;
+  height: fit-content;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(128, 128, 128, 0.25);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+main .req-sending-section .sending-wrapper .save-req-wrapper.save-req-changes-wrapper {
+  justify-content: center;
+}
+
+main .req-sending-section .sending-wrapper .save-req-wrapper label {
+  pointer-events: none;
+}
+
+main .req-sending-section .sending-wrapper .save-req-wrapper 
+.collection-to-save-req {
+  flex: 1;
+  pointer-events: none;
+  text-overflow: ellipsis;
+}
+
+main .req-sending-section .sending-wrapper .save-req-wrapper 
+.save-req-btn {
+  margin: 0;
+  pointer-events: none;
+}
+
+main .req-sending-section .sending-wrapper 
+.save-req-wrapper input[type="text"] {
+  min-width: 80px;
+  max-width: 120px;
+  font-size: 12px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  pointer-events: none;
+}
+
+main .req-sending-section .sending-wrapper 
+.save-req-wrapper .save-req-changes-btn {
+  padding: 0px 5px;
+  pointer-events: none;
+}
+
+main .req-sending-section .sending-wrapper .save-req-wrapper.allow-to-save {
+  cursor: default;
+  opacity: 1;
+}
+
+main .req-sending-section .sending-wrapper .save-req-wrapper.allow-to-save label {
+  pointer-events: auto;
+}
+
+main .req-sending-section .sending-wrapper .save-req-wrapper.allow-to-save .collection-to-save-req {
+  pointer-events: auto;
+}
+
+main .req-sending-section .sending-wrapper .save-req-wrapper.allow-to-save .save-req-btn {
+  pointer-events: auto;
+}
+
+main .req-sending-section .sending-wrapper .save-req-wrapper.allow-to-save input[type="text"] {
+  pointer-events: auto;
+}
+
+main .req-sending-section .sending-wrapper 
+.save-req-wrapper.allow-to-save .save-req-changes-btn {
+  pointer-events: auto;
+}

@@ -1,0 +1,38 @@
+.text-btn {
+  margin-left: 8px;
+  min-width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  font-size: 14.5px;
+  background: white;
+  color: rgb(0, 0, 0, 0.85);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+
+
+
+.char-btn {
+  border: none;
+  background:none;
+  font-size: 16px;
+  border-radius: 50%;
+  padding: 4px 10px;
+  transition: background 0.15s, color 0.15s;
+  cursor: pointer;
+}
+
+.char-btn:hover,
+.text-btn:hover {
+  color: white;
+  background: lightgray;
+}
+
+.char-btn:active, 
+.text-btn:active {
+  color: white;
+  background: gray;
+}
